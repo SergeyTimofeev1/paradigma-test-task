@@ -1,0 +1,135 @@
+.header-mobile {
+  display: none;
+  object-fit: contain;
+  color: $color-white;
+
+  @include media($tablet) {
+    display: block;
+    background: transparent;
+  }
+
+  &__top {
+    padding: 0 rem(22);
+    padding-top: rem(12);
+    padding-bottom: rem(31);
+    position: fixed;
+    width: 100%;
+
+    &.active {
+      background: $color-white;
+      color: $color-dark;
+    }
+  }
+
+  &__top,
+  &__logo {
+    @include flex;
+  }
+
+  &__burger-btn {
+    color: #fff;
+  }
+
+  &__burger-btn.active {
+    color: rgba(40, 40, 40, 1);
+  }
+}
+
+.mobile-contacts {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  &__time,
+  &__makecall {
+    @include adaptive-value('font-size', 12, 6);
+    font-weight: 400;
+    line-height: rem(10);
+  }
+
+  &__makecall {
+    span:nth-child(2) {
+      border-bottom: 2px dotted red;
+    }
+  }
+
+  &__phone {
+    @include adaptive-value('font-size', 16, 12);
+    font-weight: 700;
+  }
+}
+
+.mobile-menu {
+  display: none;
+  padding: 0 rem(22);
+  width: rem(320);
+  background-color: white;
+  color: $color-dark;
+  font-weight: 400;
+  font-size: rem(16);
+  line-height: rem(22);
+  text-transform: uppercase;
+  text-align: left;
+
+  @include media($tablet) {
+    width: 100%;
+  }
+
+  &__nav-list {
+    margin-bottom: rem(10);
+  }
+
+  &__nav-item {
+    margin-bottom: rem(28);
+  }
+}
+
+.nav-content {
+  margin-bottom: rem(10);
+  &__item {
+    color: rgba(146, 146, 146, 1);
+    font-weight: 400;
+    font-size: rem(12);
+    margin-bottom: rem(8);
+    text-transform: capitalize;
+
+    &:nth-child(1) {
+      margin-bottom: rem(18);
+    }
+  }
+
+  &__title {
+    margin-bottom: rem(14);
+  }
+}
+
+.mobile-info {
+  font-weight: 400;
+  font-size: rem(14);
+  line-height: rem(19);
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: rem(38);
+  }
+
+  &__calc,
+  &__contacts,
+  &__address {
+    @include flex;
+    justify-content: flex-start;
+    gap: rem(18);
+    text-transform: capitalize;
+
+    span {
+      font-weight: 800;
+      color: $color-dark;
+    }
+
+    img {
+      width: rem(65);
+      height: rem(65);
+    }
+  }
+}

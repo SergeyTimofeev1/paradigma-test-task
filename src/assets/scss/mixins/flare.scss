@@ -1,0 +1,29 @@
+%flare {
+  content: '';
+  display: block;
+  width: rem(20);
+  height: rem(200);
+  margin-left: rem(50);
+  background: #fff;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+  left: rem(-40);
+  z-index: 1;
+  transform: rotate(45deg);
+  position: absolute;
+  animation: movingFlare 4s ease-in-out 0.05s infinite;
+}
+
+@keyframes movingFlare {
+  0% {
+    left: rem(-30);
+    margin-left: rem(0);
+  }
+  30% {
+    left: 110%;
+    margin-left: rem(80);
+  }
+  100% {
+    left: 110%;
+    margin-left: rem(80);
+  }
+}
