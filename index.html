@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <link rel="stylesheet" href="assets/css/iconsfont.min.css" />
+    
+    <!-- Useful meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>paradigma</title>
+  </head>
+  <body>
+    <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__top top-header">
+        <div class="top-header__inner">
+          <div class="top-header__logo">
+            <a class="top-header__logo-link" href="index.html">
+              <img class="top-header__logo-img" src="assets/img/logo.svg" alt="top-header-logo" />
+            </a>
+            <div class="top-header__logo-info">Ремонтируем двигатели Hyundai и Kia с 2012 года</div>
+          </div>
+          <div class="top-header__address">
+            <img
+              class="top-header__address-img"
+              src="assets/img/map.svg"
+              alt="top-header-address-img"
+            />
+            <p class="top-header__address-text">
+              Адрес автоцентра: Москва, Шоссейный проезд, с4 а/2
+            </p>
+          </div>
+          <div class="top-header__map">
+            <div class="_icon-map-ico"></div>
+            <p class="top-header__map-text">Смотреть на карте</p>
+            <div class="map" id="map">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A67f6d8301b0383a6796c878716d537fb35b0d07e0bdc5db5e71a35c603caa706&amp;source=constructor"
+                width="500"
+                height="400"
+                frameborder="0"
+              ></iframe>
+            </div>
+          </div>
+          <div class="top-header__calc">
+            <img
+              class="top-header__calc-img"
+              src="assets/img/calc.svg"
+              alt="top-header-address-img"
+            />
+            <p class="top-header__calc-text">
+              Рассчитать стоимость <br />
+              <span class="top-header__calc-btn"> ремонта за 45 сек </span>
+            </p>
+          </div>
+          <div class="top-header__social top-header-social">
+            <p class="top-header-social__text">Задайте вопрос, мы сейчас онлайн</p>
+            <ul class="top-header-social__links">
+              <li class="top-header-social__item">
+                <a class="top-header-social__link _icon-header-whatsapp" href="#"></a>
+              </li>
+              <li class="top-header-social__item">
+                <a class="top-header-social__link _icon-header-tg" href="#"></a>
+              </li>
+              <li class="top-header-social__item">
+                <a class="top-header-social__link _icon-header-viber" href="#"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="top-header__contacts top-header-contacts">
+            <span class="top-header-contacts__time"><span>ЗвонитеПн-Сб 10:00 - 21:00</span> </span>
+            <a class="top-header-contacts__phone" href="tel:89251033330">+7 (925) 103 33 30</a>
+            <span class="top-header-contacts__makecall">Заказать звонок</span>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom bottom-header">
+        <nav class="bottom-header__nav">
+          <ul class="bottom-header__nav-list">
+            <li class="bottom-header__nav-item">
+              <a class="bottom-header__nav-link" href="#">Главная</a>
+            </li>
+            <li class="bottom-header__nav-item">
+              <a class="bottom-header__nav-link" href="#">услуги</a>
+            </li>
+            <li class="bottom-header__nav-item">
+              <a class="bottom-header__nav-link" href="#">модели двигателей</a>
+            </li>
+            <li class="bottom-header__nav-item">
+              <a class="bottom-header__nav-link" href="#">отзывы</a>
+            </li>
+            <li class="bottom-header__nav-item">
+              <a class="bottom-header__nav-link" href="#">стоимость</a>
+            </li>
+            <li class="bottom-header__nav-item">
+              <a class="bottom-header__nav-link" href="#">примеры работ</a>
+            </li>
+            <li class="bottom-header__nav-item">
+              <a class="bottom-header__nav-link" href="#">полезные статьи</a>
+            </li>
+            <li class="bottom-header__nav-item">
+              <a class="bottom-header__nav-link" href="#">о компании</a>
+            </li>
+            <li class="bottom-header__nav-item">
+              <a class="bottom-header__nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div class="map-overlay">
+    <iframe
+      src="https://yandex.ru/map-widget/v1/?um=constructor%3A67f6d8301b0383a6796c878716d537fb35b0d07e0bdc5db5e71a35c603caa706&amp;source=constructor"
+      width="100%"
+      height="400"
+      frameborder="0"
+    ></iframe>
+  </div>
+</header>
+ <div class="header-mobile">
+  <div class="header-mobile__top">
+    <div class="header-mobile__logo">
+      <a class="header-mobile__logo-link" href="index.html">
+        <img
+          class="header-mobile__logo-img"
+          src="assets/img/mobile-logo.svg"
+          alt="header-mobile-logo"
+        />
+      </a>
+    </div>
+    <div class="header-mobile__contacts mobile-contacts">
+      <span class="mobile-contacts__time">Звоните Пн-Сб 10:00 - 21:00</span>
+      <a class="mobile-contacts__phone" href="tel:89251033330">+7 (925) 103 33 30</a>
+      <div class="mobile-contacts__makecall">
+        <span class="_icon-phone"></span>
+        <span class="mobile-contacts__makecall-btn">заказать звонок</span>
+      </div>
+    </div>
+    <button class="header-mobile__burger-btn _icon-mobile-burger"></button>
+  </div>
+  <div class="header-mobile__menu mobile-menu">
+    <nav class="mobile-menu__nav">
+      <ul class="mobile-menu__nav-list">
+        <li class="mobile-menu__nav-item">
+          <div class="mobile-menu__nav-content nav-content">
+            <div class="nav-content__title">Услуги</div>
+            <ul>
+              <li class="nav-content__item">Ремонт дивгателей KIA</li>
+              <li class="nav-content__item">Ремонт двигателей HYundai</li>
+            </ul>
+          </div>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <div class="mobile-menu__nav-content">модели двигателей</div>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <div class="mobile-menu__nav-content">отзывы</div>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <div class="mobile-menu__nav-content">стоимость</div>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <div class="mobile-menu__nav-content">примеры работ</div>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <div class="mobile-menu__nav-content">полезные статьи</div>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <div class="mobile-menu__nav-content">о компании</div>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <div class="mobile-menu__nav-content" href="#">Контакты</div>
+        </li>
+      </ul>
+    </nav>
+    <div class="mobile-menu__info mobile-info">
+      <div class="mobile-info__inner">
+        <div class="mobile-info__address">
+          <img
+            class="mobile-info__address-img"
+            src="assets/img/map.svg"
+            alt="mobile-info-address-img"
+          />
+          <div class="mobile-info__address-text">
+            Адрес автоцентра:<br />
+            <span> Москва, Шоссейный проезд, с4 а/2 </span>
+          </div>
+        </div>
+        <div class="mobile-info__calc">
+          <img
+            class="mobile-info__calc-img"
+            src="assets/img/calc.svg"
+            alt="mobile-info-address-img"
+          />
+          <div class="mobile-info__calc-text">
+            Рассчитать стоимость ремонта <br />
+            <span> за 45 сек </span>
+          </div>
+        </div>
+        <div class="mobile-info__contacts">
+          <img
+            class="mobile-info__calc-img"
+            src="assets/img/mobile-menu-contacts.svg"
+            alt="mobile-info-address-img"
+          />
+          <div class="mobile-info__contacts-info">
+            <div class="mobile-info__contacts-infotext">
+              Есть вопрос?
+              <br />
+              <span> Задайте его нашему мастеру онлайн </span>
+            </div>
+            <a class="top-header-social__link _icon-header-whatsapp" href="#"></a>
+            <a class="top-header-social__link _icon-header-tg" href="#"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <main><section class="main">
+  <!-- <img class="main__logo" src="assets/img/logo-bg.webp" alt="logo" /> -->
+  <div class="main__scroll">
+    <div class="main__scroll-text">Scroll down</div>
+    <!-- <div class="main__scroll-border"></div> -->
+    <div class="main__scroll-icon">
+      <img src="assets/img/mouse.svg" alt="mouse" />
+      <img class="main__scroll-dot" src="assets/img/scroll-dot.svg" alt="mouse" />
+    </div>
+  </div>
+  <div class="container main__container">
+    <div class="main__inner">
+      <h1 class="main__title">
+        Профессиональный
+        <span>
+          ремонт <br />
+          двигателей
+        </span>
+        HYUNDAI и KIA <br />
+        <span>с гарантией 1 год</span> за 4-7 дней
+      </h1>
+      <h2 class="main__subtitle">в специализированном автосервисе полного цикла</h2>
+      <div class="main__buttons">
+        <button class="main__button-calc button-calc">
+          <p class="button-calc__text">Начать расчет стоимости ремонта вашего двигателя</p>
+          <div class="_icon-big-arrow button-calc__icon"></div>
+        </button>
+        <button class="main__button-consultation button-consultation">
+          <p class="button-consultation__text">Узнайте стоимость по <span>WhatsApp</span></p>
+          <div class="button-consultation__icon _icon-main-whatsapp"></div>
+        </button>
+      </div>
+      <div class="main__items">
+        <div class="main__item main-item">
+          <span class="_icon-check"></span>
+          <p class="main-item__text">
+            <span>Без предоплаты.</span>
+            Оплата после ремонта
+          </p>
+        </div>
+        <div class="main__item main-item">
+          <span class="_icon-check"></span>
+          <p class="main-item__text">
+            <span>Работаем официально</span>
+            с оформлением заказ-нарядов и чеков
+          </p>
+        </div>
+        <div class="main__item main-item">
+          <span class="_icon-check"></span>
+          <p class="main-item__text"><span>Оригинальные запчасти</span></p>
+        </div>
+        <div class="main__item main-item">
+          <span class="_icon-check"></span>
+          <p class="main-item__text">
+            <span>Лучшие цены на рынке </span>
+            благодаря прямым<br />
+            поставкам запчастей и собственному цеху механической обработки
+          </p>
+        </div>
+      </div>
+      <!-- mobile -->
+    </div>
+    <div class="main__items-mobile items-mobile">
+      <div class="main__item-mobile mobile-item">
+        <span class="_icon-check"></span>
+        <p class="mobile-item__text">
+          <span>Без предоплаты.</span>
+          Оплата после ремонта
+        </p>
+      </div>
+      <div class="main__item-mobile mobile-item">
+        <span class="_icon-check"></span>
+        <p class="mobile-item__text">
+          <span>Работаем официально</span>
+          с оформлением заказ-нарядов и чеков
+        </p>
+      </div>
+      <div class="main__item-mobile mobile-item">
+        <span class="_icon-check"></span>
+        <p class="mobile-item__text"><span>Оригинальные запчасти</span></p>
+      </div>
+      <div class="main__item-mobile mobile-item">
+        <span class="_icon-check"></span>
+        <p class="mobile-item__text">
+          <span>Лучшие цены на рынке </span>
+          благодаря прямым<br />
+          поставкам запчастей и собственному цеху механической обработки
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+ <div class="popup-overlay"></div>
+<div class="popup-success">
+  <div class="popup-success__text">Форма отправлена</div>
+</div>
+<div class="popup">
+  <div class="popup__content">
+    <div class="popup-close"></div>
+    <h2 class="popup__title">Быстро оставить заявку</h2>
+    <p class="popup__descr">Введите номер — позвоним вам в течение 5-10 минут в рабочее время</p>
+    <div class="popup__form">
+      <div class="popup__form-text">Введите ваш номер телефона</div>
+      <input
+        class="popup__form-input"
+        required="required"
+        type="tel"
+        placeholder="8(___)___-__-__"
+      />
+      <button class="popup__form-button" type="submit" disabled>Перезвоните мне</button>
+      <div class="popup__form-conf">
+        <input class="popup__form-confcheck" type="checkbox" />
+        <p class="popup__form-conftext">
+          Нажимая кнопку вы соглашаетесь с условиями <br /><span>Политики конфиденциальности</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
